@@ -1,0 +1,1 @@
+../../../SimpleCameraApp/Synchronicity.pbobjc.h

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F6B423C0AA2877175DBC53A /* libPods-SimpleCameraApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 454A6F2A16B2A60C3704D1C9 /* libPods-SimpleCameraApp.a */; };
 		ED1EC6F5216E67B800844010 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1EC6F4216E67B800844010 /* AppDelegate.m */; };
 		ED1EC6F8216E67B800844010 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1EC6F7216E67B800844010 /* ViewController.m */; };
 		ED1EC6FB216E67B800844010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1EC6F9216E67B800844010 /* Main.storyboard */; };
@@ -20,9 +21,18 @@
 		ED1EC71B216E6B0B00844010 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1EC716216E6B0B00844010 /* UIImage+Crop.m */; };
 		ED1EC71C216E6B0B00844010 /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1EC718216E6B0B00844010 /* ViewUtils.m */; };
 		ED1EC71F216E70EF00844010 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1EC71D216E70EF00844010 /* ImageViewController.m */; };
+		ED1F34372178E21000838515 /* UIViewController+customFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1F34342178E20D00838515 /* UIViewController+customFunction.m */; };
+		ED1F343C2178E25000838515 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1F343B2178E25000838515 /* MBProgressHUD.m */; };
+		ED1F343F2178E26100838515 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1F343E2178E26100838515 /* TPKeyboardAvoidingScrollView.m */; };
+		ED1F34492178E39A00838515 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1F34482178E39A00838515 /* LoginViewController.m */; };
+		ED1F344C2178E3AE00838515 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1F344B2178E3AE00838515 /* SignUpViewController.m */; };
+		EDE372EE2178FB13008469A6 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE372ED2178FB13008469A6 /* HomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0044C9916666FBAD50B41FAD /* Pods-SimpleCameraApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCameraApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleCameraApp/Pods-SimpleCameraApp.debug.xcconfig"; sourceTree = "<group>"; };
+		454A6F2A16B2A60C3704D1C9 /* libPods-SimpleCameraApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleCameraApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C650E6BB2BFD5710D160CA8A /* Pods-SimpleCameraApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCameraApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleCameraApp/Pods-SimpleCameraApp.release.xcconfig"; sourceTree = "<group>"; };
 		ED1EC6F0216E67B800844010 /* SimpleCameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1EC6F3216E67B800844010 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED1EC6F4216E67B800844010 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,6 +57,19 @@
 		ED1EC719216E6B0B00844010 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
 		ED1EC71D216E70EF00844010 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		ED1EC71E216E70EF00844010 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		ED1F34342178E20D00838515 /* UIViewController+customFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+customFunction.m"; sourceTree = "<group>"; };
+		ED1F34352178E20E00838515 /* GlobalValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalValue.h; sourceTree = "<group>"; };
+		ED1F34362178E20F00838515 /* UIViewController+customFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+customFunction.h"; sourceTree = "<group>"; };
+		ED1F343A2178E24F00838515 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		ED1F343B2178E25000838515 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		ED1F343D2178E26000838515 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		ED1F343E2178E26100838515 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		ED1F34472178E39A00838515 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		ED1F34482178E39A00838515 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		ED1F344A2178E3AE00838515 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		ED1F344B2178E3AE00838515 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		EDE372EC2178FB13008469A6 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		EDE372ED2178FB13008469A6 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,17 +77,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6B423C0AA2877175DBC53A /* libPods-SimpleCameraApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0FAABDAF9B1CB8A253E409B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0044C9916666FBAD50B41FAD /* Pods-SimpleCameraApp.debug.xcconfig */,
+				C650E6BB2BFD5710D160CA8A /* Pods-SimpleCameraApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9D1B4D6F78DC894D2C359D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				454A6F2A16B2A60C3704D1C9 /* libPods-SimpleCameraApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED1EC6E7216E67B700844010 = {
 			isa = PBXGroup;
 			children = (
 				ED1EC6F2216E67B800844010 /* SimpleCameraApp */,
 				ED1EC6F1216E67B800844010 /* Products */,
+				A0FAABDAF9B1CB8A253E409B /* Pods */,
+				B9D1B4D6F78DC894D2C359D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,14 +122,9 @@
 		ED1EC6F2216E67B800844010 /* SimpleCameraApp */ = {
 			isa = PBXGroup;
 			children = (
-				ED1EC70A216E6ABC00844010 /* CameraClasses */,
+				ED1F34402178E34700838515 /* AppClasses */,
+				ED1F34332178E04C00838515 /* ThirdPartyTools */,
 				ED1EC709216E6AB300844010 /* Utitility */,
-				ED1EC6F3216E67B800844010 /* AppDelegate.h */,
-				ED1EC6F4216E67B800844010 /* AppDelegate.m */,
-				ED1EC6F6216E67B800844010 /* ViewController.h */,
-				ED1EC6F7216E67B800844010 /* ViewController.m */,
-				ED1EC71E216E70EF00844010 /* ImageViewController.h */,
-				ED1EC71D216E70EF00844010 /* ImageViewController.m */,
 				ED1EC6F9216E67B800844010 /* Main.storyboard */,
 				ED1EC6FC216E67B800844010 /* Assets.xcassets */,
 				ED1EC6FE216E67B800844010 /* LaunchScreen.storyboard */,
@@ -99,6 +137,9 @@
 		ED1EC709216E6AB300844010 /* Utitility */ = {
 			isa = PBXGroup;
 			children = (
+				ED1F34352178E20E00838515 /* GlobalValue.h */,
+				ED1F34362178E20F00838515 /* UIViewController+customFunction.h */,
+				ED1F34342178E20D00838515 /* UIViewController+customFunction.m */,
 				ED1EC717216E6B0B00844010 /* UIImage+Crop.h */,
 				ED1EC716216E6B0B00844010 /* UIImage+Crop.m */,
 				ED1EC715216E6B0B00844010 /* UIImage+Resize.h */,
@@ -122,6 +163,109 @@
 			path = CameraClasses;
 			sourceTree = "<group>";
 		};
+		ED1F34332178E04C00838515 /* ThirdPartyTools */ = {
+			isa = PBXGroup;
+			children = (
+				ED1F34382178E23800838515 /* HUD */,
+				ED1F34392178E23800838515 /* TPKeyBoard */,
+			);
+			path = ThirdPartyTools;
+			sourceTree = "<group>";
+		};
+		ED1F34382178E23800838515 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				ED1F343A2178E24F00838515 /* MBProgressHUD.h */,
+				ED1F343B2178E25000838515 /* MBProgressHUD.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		ED1F34392178E23800838515 /* TPKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				ED1F343D2178E26000838515 /* TPKeyboardAvoidingScrollView.h */,
+				ED1F343E2178E26100838515 /* TPKeyboardAvoidingScrollView.m */,
+			);
+			path = TPKeyBoard;
+			sourceTree = "<group>";
+		};
+		ED1F34402178E34700838515 /* AppClasses */ = {
+			isa = PBXGroup;
+			children = (
+				ED1F34412178E34700838515 /* AppDelegate */,
+				ED1F34422178E34700838515 /* ViewControlles */,
+			);
+			path = AppClasses;
+			sourceTree = "<group>";
+		};
+		ED1F34412178E34700838515 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				ED1EC6F3216E67B800844010 /* AppDelegate.h */,
+				ED1EC6F4216E67B800844010 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		ED1F34422178E34700838515 /* ViewControlles */ = {
+			isa = PBXGroup;
+			children = (
+				EDE372EB2178FACE008469A6 /* HomeScreenVC */,
+				ED1F34432178E34700838515 /* CameraVC */,
+				ED1F34442178E34700838515 /* ImageVC */,
+				ED1F34452178E34700838515 /* LoginVc */,
+				ED1F34462178E34700838515 /* SignUpVC */,
+			);
+			path = ViewControlles;
+			sourceTree = "<group>";
+		};
+		ED1F34432178E34700838515 /* CameraVC */ = {
+			isa = PBXGroup;
+			children = (
+				ED1EC70A216E6ABC00844010 /* CameraClasses */,
+				ED1EC6F6216E67B800844010 /* ViewController.h */,
+				ED1EC6F7216E67B800844010 /* ViewController.m */,
+			);
+			path = CameraVC;
+			sourceTree = "<group>";
+		};
+		ED1F34442178E34700838515 /* ImageVC */ = {
+			isa = PBXGroup;
+			children = (
+				ED1EC71E216E70EF00844010 /* ImageViewController.h */,
+				ED1EC71D216E70EF00844010 /* ImageViewController.m */,
+			);
+			path = ImageVC;
+			sourceTree = "<group>";
+		};
+		ED1F34452178E34700838515 /* LoginVc */ = {
+			isa = PBXGroup;
+			children = (
+				ED1F34472178E39A00838515 /* LoginViewController.h */,
+				ED1F34482178E39A00838515 /* LoginViewController.m */,
+			);
+			path = LoginVc;
+			sourceTree = "<group>";
+		};
+		ED1F34462178E34700838515 /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				ED1F344A2178E3AE00838515 /* SignUpViewController.h */,
+				ED1F344B2178E3AE00838515 /* SignUpViewController.m */,
+			);
+			path = SignUpVC;
+			sourceTree = "<group>";
+		};
+		EDE372EB2178FACE008469A6 /* HomeScreenVC */ = {
+			isa = PBXGroup;
+			children = (
+				EDE372EC2178FB13008469A6 /* HomeVC.h */,
+				EDE372ED2178FB13008469A6 /* HomeVC.m */,
+			);
+			path = HomeScreenVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED1EC706216E67B800844010 /* Build configuration list for PBXNativeTarget "SimpleCameraApp" */;
 			buildPhases = (
+				7B83B354BCAE13D91B530FE0 /* [CP] Check Pods Manifest.lock */,
 				ED1EC6EC216E67B800844010 /* Sources */,
 				ED1EC6ED216E67B800844010 /* Frameworks */,
 				ED1EC6EE216E67B800844010 /* Resources */,
+				F81A31C8FFA7B70DB7A13001 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,21 +334,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B83B354BCAE13D91B530FE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleCameraApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81A31C8FFA7B70DB7A13001 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleCameraApp/Pods-SimpleCameraApp-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleCameraApp/Pods-SimpleCameraApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED1EC6EC216E67B800844010 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1F343F2178E26100838515 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				ED1EC71F216E70EF00844010 /* ImageViewController.m in Sources */,
 				ED1EC71C216E6B0B00844010 /* ViewUtils.m in Sources */,
 				ED1EC713216E6AFC00844010 /* LLSimpleCamera.m in Sources */,
+				ED1F34492178E39A00838515 /* LoginViewController.m in Sources */,
+				EDE372EE2178FB13008469A6 /* HomeVC.m in Sources */,
 				ED1EC71B216E6B0B00844010 /* UIImage+Crop.m in Sources */,
 				ED1EC712216E6AFC00844010 /* LLSimpleCamera+Helper.m in Sources */,
 				ED1EC6F8216E67B800844010 /* ViewController.m in Sources */,
 				ED1EC703216E67B800844010 /* main.m in Sources */,
+				ED1F343C2178E25000838515 /* MBProgressHUD.m in Sources */,
 				ED1EC711216E6AFC00844010 /* UIImage+FixOrientation.m in Sources */,
+				ED1F344C2178E3AE00838515 /* SignUpViewController.m in Sources */,
 				ED1EC6F5216E67B800844010 /* AppDelegate.m in Sources */,
 				ED1EC71A216E6B0B00844010 /* UIImage+Resize.m in Sources */,
+				ED1F34372178E21000838515 /* UIViewController+customFunction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +525,7 @@
 		};
 		ED1EC707216E67B800844010 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0044C9916666FBAD50B41FAD /* Pods-SimpleCameraApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -350,6 +542,7 @@
 		};
 		ED1EC708216E67B800844010 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C650E6BB2BFD5710D160CA8A /* Pods-SimpleCameraApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
