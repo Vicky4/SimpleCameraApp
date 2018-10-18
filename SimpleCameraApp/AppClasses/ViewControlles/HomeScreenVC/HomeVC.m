@@ -141,6 +141,7 @@
 -(void)sendImageToServer
 {
     [self showHUD:@""];
+    
     NSData *imageData = UIImagePNGRepresentation(localImage.image);
     
     Synchronicity *client = [[Synchronicity alloc] initWithHost:HOST_URL];
@@ -148,24 +149,23 @@
     StreamDataBytes * request = [StreamDataBytes message];
     request.content=imageData;
     
-    GRXWriter *imageWriter=[GRXWriter writerWithValue:request];
     
-    GRPCProtoCall *call =  [client RPCToSimpleRPCBytesWithRequestsWriter:imageWriter eventHandler:^(BOOL done, StreamDataResponseBytes * _Nullable response, NSError * _Nullable error)
+    GRPCProtoCall *call =  [client RPCToSimpleRPCBytesWithRequestsWriter:[GRXWriter writerWithValue:request] eventHandler:^(BOOL done, StreamDataResponseBytes * _Nullable response, NSError * _Nullable error)
     {
-
-
-        if (error!=nil)
+        if (response)
         {
-            [self hudHide];
-            NSLog(@"================ %@",error.localizedDescription);
+            NSLog(@"Got message %@", response);
         }
-        else
+        else if (error)
         {
-            [self hudHide];
-            NSLog( @"%@",response);
-            [imageWriter setState:GRXWriterStateFinished];
-
+            NSLog(@"RPC error: %@", error);
         }
+        if (done)
+        {
+            NSLog(@"Call ended.");
+        }
+
+        
     }];
 
     [call start];
