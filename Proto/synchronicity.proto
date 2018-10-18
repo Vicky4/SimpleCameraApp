@@ -1,0 +1,93 @@
+syntax = "proto3";
+
+package protod;
+
+service Synchronicity {
+    rpc CheckAuth (CheckAuthRequest) returns (CheckAuthReply) {
+    }
+    rpc TokenRefresh (TokenRefreshRequest) returns (TokenRefreshReply) {
+    }
+    rpc Login (LoginRequest) returns (LoginReply) {
+    }
+    rpc Register (RegisterRequest) returns (RegisterReply) {
+    }
+    rpc RequestChangePassword (RequestChangePasswordRequest) returns (RequestChangePasswordReply) {
+    }
+    rpc ChangePassword (ChangePasswordRequest) returns (ChangePasswordReply) {
+    }
+    rpc SimpleRPC (stream StreamData) returns (stream StreamDataResponse) {
+    }
+    rpc SimpleRPCBytes (stream StreamDataBytes) returns (stream StreamDataResponseBytes) {
+    }
+}
+
+message StreamData {
+    string Content = 1;
+}
+
+message StreamDataResponse {
+    string Content = 1;
+}
+
+message StreamDataBytes {
+    bytes Content = 1;
+}
+
+message StreamDataResponseBytes {
+    bytes Content = 1;
+}
+
+message CheckAuthRequest {
+}
+
+message CheckAuthReply {
+}
+
+message TokenRefreshRequest {
+    string RefreshToken = 1;
+    string email = 2;
+}
+
+message TokenRefreshReply {
+    string TokenID = 1;
+    string AccessToken = 2;
+    string RefreshToken = 3;
+}
+
+message LoginRequest {
+    string Email = 1;
+    string Password = 2;
+}
+
+message LoginReply {
+    string TokenID = 1;
+    string AccessToken = 2;
+    string RefreshToken = 3;
+}
+
+message RegisterRequest {
+    string Email = 1;
+    string Password = 2;
+}
+
+message RegisterReply {
+    bool Status = 1;
+}
+
+message RequestChangePasswordRequest {
+    string Email = 1;
+}
+
+message RequestChangePasswordReply {
+    bool Status = 1;
+}
+
+message ChangePasswordRequest {
+    string Email = 1;
+    string Password = 2;
+    string Code = 4;
+}
+
+message ChangePasswordReply {
+    bool Status = 1;
+}
